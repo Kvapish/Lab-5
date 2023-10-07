@@ -31,5 +31,4 @@ namespace Lab5
             return base.ToString() + $", Сорт груш: {PearVariety}, Кількість груш: {PearCount}, Наявність фруктів: {hasFruitStr}";
         }
     }
-
 }

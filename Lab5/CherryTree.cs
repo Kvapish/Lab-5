@@ -31,6 +31,4 @@ namespace Lab5
             return base.ToString() + $", Сорт вишень: {CherryVariety}, Кількість вишень: {CherryCount}, Наявність фруктів: {hasFruitStr}";
         }
     }
-
-
 }

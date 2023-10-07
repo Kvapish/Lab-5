@@ -59,5 +59,4 @@ namespace Lab5
             Console.ReadLine();
         }
     }
-
 }
