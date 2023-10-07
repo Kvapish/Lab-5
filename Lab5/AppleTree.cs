@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Lab5
 {
     /// <summary>
@@ -13,10 +8,13 @@ namespace Lab5
     /// </summary>
     public class AppleTree : BaseInform
     {
-        public string AppleVariety { get; set; }
-        public int AppleCount { get; set; }
-        public bool HasFruit { get; set; }
+        private string _applevariety;
+        private int _applecount;
+        private bool _hasfruit;
 
+        public string AppleVariety { get => _applevariety; set => _applevariety = value; }
+        public int AppleCount { get => _applecount; set => _applecount = value; }
+        public bool HasFruit { get => _hasfruit; set => _hasfruit = value; }
         public AppleTree(string name, int age, double height, string location, string soilType, string appleVariety, int appleCount, bool hasFruit)
             : base(name, age, height, location, soilType)
         {

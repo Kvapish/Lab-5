@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Lab5
 {
     /// <summary>
@@ -13,10 +8,13 @@ namespace Lab5
     /// </summary>
     public class CherryTree : BaseInform
     {
-        public string CherryVariety { get; set; }
-        public int CherryCount { get; set; }
-        public bool HasFruit { get; set; }
+        private string _cherryvariety;
+        private int _cherrycount;
+        private bool _hasfruit;
 
+        public string CherryVariety { get => _cherryvariety; set => _cherryvariety = value; }
+        public int CherryCount { get => _cherrycount; set => _cherrycount = value; }
+        public bool HasFruit { get => _hasfruit; set => _hasfruit = value; }
         public CherryTree(string name, int age, double height, string location, string soilType, string cherryVariety, int cherryCount, bool hasFruit)
             : base(name, age, height, location, soilType)
         {
@@ -24,7 +22,7 @@ namespace Lab5
             CherryCount = cherryCount;
             HasFruit = hasFruit;
         }
-
+ 
         public override string ToString()
         {
             string hasFruitStr = HasFruit ? "так" : "ні";

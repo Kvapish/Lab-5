@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Lab5
 {
     /// <summary>
@@ -13,11 +8,18 @@ namespace Lab5
     /// </summary>
     public class BaseInform
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public double Height { get; set; }
-        public string Location { get; set; }
-        public string SoilType { get; set; }
+        private string _name;
+        private int _age;
+        private double _height;
+        private string _location;
+        private string _soiltype;
+       
+        
+        public string Name { get => _name; set => _name = value; }
+        public int Age { get => _age; set => _age = value; }
+        public double Height { get => _height; set => _height = value; }
+        public string Location { get => _location; set => _location = value; }
+        public string SoilType { get => _soiltype; set => _soiltype = value; }
 
         public BaseInform(string name, int age, double height, string location, string soilType)
         {
